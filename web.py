@@ -1,8 +1,9 @@
 import streamlit as st
 import pandas as pd
-
+import os
+file_path = "養蟲組.xlsx"
 # 1. 讀取資料
-df = pd.read_excel(r"C:\Users\nmbdcrc\Desktop\養蟲組.xlsx")
+df = pd.read_excel(file_path)
 
 st.title("蚊蟲實驗自動化查詢系統")
 
