@@ -16,4 +16,4 @@ result = df[(df["年"] == year) & (df["藥劑"] == pesticides)]
 count = len(result)
 # 4. 顯示結果
 st.write(f"篩選出 {year} 年，所用藥劑，共{count}筆。")
-st.dataframe(result.reset_index(drop=True))
+st.dataframe(result.reset_index(drop=True),hide_index=True, use_container_width=True)
