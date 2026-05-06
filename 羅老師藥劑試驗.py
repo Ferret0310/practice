@@ -5,7 +5,7 @@ file_path = "羅老師藥劑試驗.xlsx"
 # 1. 讀取資料
 df = pd.read_excel(file_path)
 
-st.title("羅老師藥劑實驗自動化查詢系統")
+st.title("羅老師藥劑實驗查詢系統")
 unique_pesticides = df["藥劑"].unique().tolist()
 all_pesticides = ["全部"] + unique_pesticides
 # 2. 建立側邊欄篩選器 (自動生成下拉選單)
