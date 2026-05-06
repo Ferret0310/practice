@@ -16,6 +16,6 @@ method = st.sidebar.selectbox("請選實驗方法",df["實驗方法"].unique())
 result = df[(df["年"] == year) & (df["縣市"] == city) & (df["實驗方法"] == method)]
 
 # 4. 顯示結果
-st.write(f"篩選出 {year} 年，{city} 的實驗紀錄：")
+st.write(f"篩選出 {year} 年，{city} 的實驗紀錄與{method}試驗")
 st.dataframe(result)
 
